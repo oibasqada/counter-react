@@ -18,8 +18,8 @@ const App = () => {
         <h3>{result}</h3>
           <input type="number" onChange={(e) => setValue(Number(e.target.value))}/>
           <input type="number" onChange={(e) => setCounter(Number(e.target.value))}/>
-        <button onClick={handleIncrement}>+</button>
-        <button onClick={handleDecrement}>-</button>
+        <button className={'plus'} onClick={handleIncrement}>+</button>
+        <button className={'minus'} onClick={handleDecrement}>-</button>
       </div>
   );
 };
